@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+
+figure.card{
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+	height: 300px;
+	width: 525px;
+	overflow: hidden;
+}
+figure.card img.bg{
+	width: inherit;
+	height: inherit;
+}
+
+figure.card figcaption.text{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 300px;
+	z-index: 1;
+	color: #fff;
+	background-color:#3b3b3b;
+	padding: 50px 10px 50px 0px;
+}
+figure.card figcaption.text::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color:inherit;
+	z-index: -1;
+	bottom: 0;
+	right: 0;
+	left: -140px;
+	transform-origin: left bottom;
+	transform: skewX(-25deg);
+}
+
+figure.card figcaption.text h1.name{
+	font-size: 24px;
+	text-align: center;
+	font-weight: 500;
+	margin: 10px 0;
+}
+figure.card figcaption.text h2.title{
+	font-size: 18px;
+	color:#f3a727;
+	text-align: center;
+	font-weight: 500;
+	margin: 20px 0;
+}
+figure.card figcaption.text p.contact{
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	color: #bbb;
+	margin-top: 25px;
+	margin-left: -25px;
+}
+figure.card figcaption.text img.logo{
+	width: 50px;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+}
